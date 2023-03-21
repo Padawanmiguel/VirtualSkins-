@@ -28,7 +28,7 @@ class Header extends HTMLElement {
         align-items: center;
         background-color: #fff;
         height: 120px;
-        border-bottom: 11px solid var(--cor4);
+        border-bottom: 5px solid var(--cor2);
         place-items: center;
       }
       
@@ -61,7 +61,7 @@ class Header extends HTMLElement {
         height: 5px;
         width: 100%;
         border-radius: 30px;
-        background: var(--cor3);
+        background: var(--cor1);
         transition: .2s ease-in-out;
       }
       
@@ -122,7 +122,7 @@ class Header extends HTMLElement {
         justify-content: center;
         align-items: center;
         width: 50px;
-        background: var(--cor5);
+        background: var(--cor1);
         border: none;
         outline: none;
         border-radius: 11px;
@@ -152,19 +152,19 @@ class Header extends HTMLElement {
       }
       
       .imgPesquisa:hover {
-        background: var(--cor1);
+        background: var(--cor2);
       }
       
       .imgCentral:hover {
-        background: var(--cor1);
+        background: var(--cor2);
       }
       
       .imgFavoritos:hover {
-        background: var(--cor1);
+        background: var(--cor2);
       }
       
       .imgCarrinho:hover {
-        background: var(--cor1);
+        background: var(--cor2);
       }
       
       .divConta {
@@ -198,7 +198,7 @@ class Header extends HTMLElement {
         justify-content: center;
         align-items: center;
         width: 50px;
-        background: var(--cor5);
+        background: var(--cor1);
         border: none;
         outline: none;
         border-radius: 11px 0px 0px 11px;
@@ -216,7 +216,7 @@ class Header extends HTMLElement {
         align-items: center;
         width: 50px;
         height: 50px;
-        background: var(--cor5);
+        background: var(--cor1);
         border: none;
         outline: none;
         transition: all .2s ease-in-out;
@@ -232,7 +232,7 @@ class Header extends HTMLElement {
         justify-content: center;
         align-items: center;
         width: 50px;
-        background: var(--cor5);
+        background: var(--cor1);
         border: none;
         outline: none;
         border-radius: 0px 11px 11px 0px;
