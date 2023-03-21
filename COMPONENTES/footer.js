@@ -120,14 +120,14 @@ class Footer extends HTMLElement {
       margin-top: 8px;
   }
   
-  a {
+  li a {
       color: #fff;
       cursor: pointer;
       font-size: 18px;
       text-decoration: none;
   }
   
-  a:hover {
+  li a:hover {
       color: #4faaff;
   }
   
