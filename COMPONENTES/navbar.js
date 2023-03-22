@@ -174,7 +174,7 @@ class Header extends HTMLElement {
         width: 300px;
       }
       
-      .divConta ion-icon {
+      .divConta img {
         width: 50px;
         height: 50px;
         margin: 13px;
@@ -184,7 +184,12 @@ class Header extends HTMLElement {
         text-decoration: none;
         color: #000;
         font-size: 15px;
-      }
+      }      
+      
+      .divConta a:hover {
+        text-decoration: none;
+        color: #4faaff;
+        }
       
       .settings {
         display: flex;
@@ -267,7 +272,7 @@ class Header extends HTMLElement {
 
           </div>  
           <div class="divConta">
-            <img src="./person-circle-outline.svg" alt="">
+            <img src="./IMG/person-circle-outline.svg" alt="">
             <span>
                 Olá { USER }<br>
                 <a href="">MINHA CONTA</a> | <a href="">SAIR</a>

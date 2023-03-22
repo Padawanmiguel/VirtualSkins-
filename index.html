@@ -9,40 +9,58 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./CSS/produtos-em-ofertas.css">
 
-    <!-- SCRIPTS -->
+    <!-- COMPONENTES -->
     <script src="./COMPONENTES/footer.js" type="text/javascript" defer></script>
     <script src="./COMPONENTES/navbar.js" type="text/javascript" defer></script>
+    <script src="./COMPONENTES/produto1/produto-1.js" type="text/javascript" defer></script>
+
+    <!-- JS -->
+    <script src="./JS/countdown.js" type="text/javascript" defer></script>
+
 
     <title>VirtualSkins! | Maior E-commerce de Óculos de realidade virtual no Brasil</title>
 </head>
 <body>
     <navbar-1></navbar-1>
-    <section>
+    <section class="container_index">
+        <!-- ANUNCIOS -->
+        <main>
+            <div class="anuncios"></div>
+        </main>
+        <!-- COUNTDOWN -->
+        <main class="countdown">
+                <div class="countline">
+                    <p class="timing">Termina em:</p> 
+                    <img src="./IMG/time.svg" alt="" class="times">
+                    <div class="countdown-container">
+                        <div class="countdown-el days-c">
+                            <p class="text" id="days">00</p>
+                            <span>D</span>
+                        </div>
+                
+                        <div class="countdown-el hours-c">
+                            <p class="text" id="hours">00</p>
+                            <span>:</span>
+                        </div>
+                
+                        <div class="countdown-el mins-c">
+                            <p class="text" id="mins">00</p>
+                            <span>:</span>
+                        </div>
+                
+                        <div class="countdown-el secs-c">
+                            <p class="text" id="secs">00</p>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+        </main>
+        <!-- OFERTAS ESPECIAIS -->
         <main class="produtos-em-ofertas">
-            <div class="primeiro-produto">
-                <div class="promo">
-                    <div><img src="" alt=""></div>
-                    <button class="favoritos">
-                        <img width="50" id="P1" onclick="trocar1()" class="img-gods expand" src="./IMG/">
-                    </button>
-                </div>
-                <div class="imagem">
-                    <div><img src="./IMG/" alt=""></div>
-                </div>
-                <div class="informacoes">
-                    <h2 class="preco-produto">R$</h2>
-                    <p class="nome-produto">VR</p>
-                    <div><img src="./IMG/" alt="" class="stars"></div>
-                </div>
-                <div class="comprar">
-                    <form action="">
-                        <label for="">
-                            <input type="submit" value="COMPRAR">
-                            <img src="./IMG" alt="">
-                        </label>
-                    </form>
-                </div>
-            </div>
+            <produto-1></produto-1>
+            <produto-1></produto-1>
+            <produto-1></produto-1>
+            <produto-1></produto-1>
         </main>
     </section>
     <footer-template></footer-template>
