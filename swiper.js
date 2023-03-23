@@ -5,7 +5,7 @@ var swiper = new Swiper(".slide-content", {
   fade:  'true',
   grabCursor: 'true',
   autoplay: {
-    delay: 2500,
+    delay: 4000,
     disableOnInteraction: false,
   },
 

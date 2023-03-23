@@ -22,6 +22,14 @@ class Header extends HTMLElement {
           --cor5: #0074E0;
       }
       
+      header {
+        position: fixed ;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        border-radius: 0%
+      }
+
       nav {
         position:sticky;
         display: grid;
@@ -269,20 +277,20 @@ class Header extends HTMLElement {
           <div class="logo"> <img src="https://cdn.dribbble.com/users/230290/screenshots/13959203/virtual_reality_logo_4x.jpg" alt=""></div>
           <div id="divBusca" >
               <input type="text" class="txtBusca" placeholder="Pesquisar...">
-              <button type="submit" class="imgPesquisa"> <a href=""> <img src="./IMG/search.svg" alt=""> </a></button>
+              <button type="submit" class="imgPesquisa"> <a href=""> <img src="../IMG/search.svg" alt=""> </a></button>
 
           </div>  
           <div class="divConta">
-            <img src="./IMG/person-circle-outline.svg" alt="">
+            <img src="../IMG/person-circle-outline.svg" alt="">
             <span>
                 Olá { USER }<br>
                 <a href="">MINHA CONTA</a> | <a href="">SAIR</a>
             </span>
           </div>
           <div class="settings">
-            <button class="imgCentral"> <a href="#"> <img src="./IMG/headset.svg" alt=""> </a> </button>
-            <button class="imgFavoritos"> <a href="#"> <img src="./IMG/heart.svg" alt=""> </a></button>
-            <button class="imgCarrinho"> <a href="#"> <img src="./IMG/shopping-cart.svg" alt=""> </a> </button>
+            <button class="imgCentral"> <a href="#"> <img src="../IMG/headset.svg" alt=""> </a> </button>
+            <button class="imgFavoritos"> <a href="#"> <img src="../IMG/heart.svg" alt=""> </a></button>
+            <button class="imgCarrinho"> <a href="#"> <img src="../IMG/shopping-cart.svg" alt=""> </a> </button>
           </div>
         </nav>
       </header>

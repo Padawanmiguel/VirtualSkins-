@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --cor1: #0030AD;
+    --cor2: #00237A;
+    --cor3: #0048FF;
+    --cor4: #00113B;
+    --cor5: #0074E0;
+}
+
+.minha-conta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conta-cupom {
+    display: flex;
+    margin: 10px;
+    gap: 10px;
+    justify-content: center;
+}
+
+.conta-content {
+    display: grid;
+    grid-template-columns: .2fr 1fr .2fr 1.5fr .2fr;
+    grid-template-rows: .2fr 1fr .2fr;
+    place-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+}
+
+.description-conta {
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.description-conta h1 {
+    margin-top: -10px;
+}
+
+.imagem-conta img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--cor2);
+}
+
+.imagem-conta {
+    grid-row: 2;
+    grid-column: 2;
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 3px;
+}
+
+.cupom-content {
+    display: grid;
+    grid-template-columns: .2fr 2.7fr .2fr;
+    grid-template-rows: .2fr 1fr .2fr;
+    place-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+}
+
+.description-cupom {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.input-cupom {
+    display: flex;
+    background-color: white;
+    border-radius: 43px;
+    height: 45px;
+  }
+  
+  .txtBusca {
+    outline: none;
+    background-color: transparent;
+    padding-left: 15px;
+    font-size: 18px;
+    border: none;
+    height: 45px;
+    width: 380px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+  }
+  
+  .imgPesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    background: var(--cor1);
+    border: none;
+    outline: none;
+    border-radius: 11px;
+    transition: all .2s ease-in-out;
+    margin-left: -100px;
+
+  }
+
+  .imgPesquisa a{
+    text-decoration: none;
+    color: #fff;
+    font-weight:700 ;
+  }
+
+  .wrapper {
+    margin-bottom: 40px;
+  }
+
+  .dados-content {
+    margin: 10px;
+    padding: 20px ;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .dados-titulo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .dados-titulo h1 {
+    margin: 10px;
+    font-size: 22px;
+  }
+
+  .dados-titulo img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .enderecos-titulo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .enderecos-titulo h1 {
+    margin: 10px;
+    font-size: 22px;
+  }
+
+  .enderecos-titulo img {
+    width: 35px;
+    height: 35px;
+  }
