@@ -174,6 +174,10 @@ class Footer extends HTMLElement {
       color: #fff;
       font-size: 13px;
   }   
+
+  footer {
+    
+  }
       </style>
       <footer>
       <div class="container5">

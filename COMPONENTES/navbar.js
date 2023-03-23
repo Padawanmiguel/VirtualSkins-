@@ -23,6 +23,7 @@ class Header extends HTMLElement {
       }
       
       nav {
+        position:sticky;
         display: grid;
         grid-template-columns: .3fr .5fr .5fr 1fr 1fr 1fr .3fr;
         align-items: center;
@@ -268,7 +269,7 @@ class Header extends HTMLElement {
           <div class="logo"> <img src="https://cdn.dribbble.com/users/230290/screenshots/13959203/virtual_reality_logo_4x.jpg" alt=""></div>
           <div id="divBusca" >
               <input type="text" class="txtBusca" placeholder="Pesquisar...">
-              <button class="imgPesquisa"> <a href=""> <img src="./IMG/search.svg" alt=""> </a></button>
+              <button type="submit" class="imgPesquisa"> <a href=""> <img src="./IMG/search.svg" alt=""> </a></button>
 
           </div>  
           <div class="divConta">

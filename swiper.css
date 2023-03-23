@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --cor1: #0030AD;
+    --cor2: #00237A;
+    --cor3: #0048FF;
+    --cor4: #00113B;
+    --cor5: #0074E0;
+}
+
+
+.anuncios {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.slide-container {
+    max-width: 1440px;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.slide-content {
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.card {
+    border-radius: 25px;
+    background-color: #fff;
+}
+
+.image-content , 
+.card-content {
+    padding: 10px 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-content {
+    position: relative;
+    row-gap: 5px    ;
+    padding: 25px 0;
+}
+
+.overlay {
+    left: 0;
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: var(--cor2);
+    border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after {
+    content: '';
+    right: 0;
+    bottom: -40px;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: var(--cor2);
+}
+
+.overlay::after {
+    border-radius:  0 25px 0 0 ;
+    background-color: #fff;
+}
+
+.card-image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 3px;
+}
+
+.card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--cor2);
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.description {
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+}
+
+.button {
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: var(--cor1);
+    border-radius: 6px;
+    margin: 16px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.button:hover {
+    background-color: var(--cor2);
+}
+
+.swiper-navBtn {
+    color: var(--cor1);
+    transition: color   .3s ease;
+}
+
+.swiper-navBtn:hover{
+    color: var(--cor5);
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-pagination-bullet {
+    background-color: #cccccc;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--cor1);
+
+}
+
+
+
