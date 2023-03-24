@@ -28,6 +28,7 @@ class Header extends HTMLElement {
         left: 0;
         z-index: 2;
         border-radius: 0%
+        width: 100vw;
       }
 
       nav {
@@ -39,6 +40,7 @@ class Header extends HTMLElement {
         height: 120px;
         border-bottom: 5px solid var(--cor2);
         place-items: center;
+        width: 100vw  ;
       }
       
           /* Sanduiche-menu */

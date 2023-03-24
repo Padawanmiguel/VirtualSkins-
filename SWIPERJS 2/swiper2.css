@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --cor1: #0030AD;
+    --cor2: #00237A;
+    --cor3: #0048FF;
+    --cor4: #00113B;
+    --cor5: #0074E0;
+}
+
+
+.on-sale {
+    display: grid;
+    width: 100%;
+    background-color: rgba(0, 48, 173, 0.24);
+    justify-content: end; 
+}
+
+.on-sale-container {
+    max-width: 800px;
+    width: 100%;
+    margin-right: 20px;
+}
+
+.on-sale-titulo {
+    margin: 50px 0px 0px 45px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #0030AD;
+}
+
+.on-sale-content {
+    margin: 0 40px;
+    overflow: hidden;
+}
+
+.on-sale-card {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.image-on-sale  ,
+.card-content {
+    padding: 10px 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-on-sale {
+    position: relative;
+    row-gap: 5px    ;
+    padding: 15px 0 ;
+}
+
+
+.swiper-navBtn:hover{
+    color: var(--cor5);
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-pagination-bullet {
+    background-color: #cccccc;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--cor1);
+
+}
+
+
+

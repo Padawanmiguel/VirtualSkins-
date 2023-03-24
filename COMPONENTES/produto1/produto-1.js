@@ -31,6 +31,25 @@ class Main extends HTMLElement {
         align-items: center;
         justify-content: center;
     }
+
+    .ver-mais {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        margin: 0px 30px ;
+    }
+
+    .ver-mais a {
+        color: var(--cor1);
+        font-weight: 700;
+        font-size: 17px;
+        text-decoration:none;
+        transition: all .3 ease;
+    }
+
+    .ver-mais a:hover {
+        color: var(--cor5);
+    }
     
     .primeiro-produto {
         background: #fff;
