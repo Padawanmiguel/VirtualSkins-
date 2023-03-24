@@ -1,0 +1,64 @@
+.flex-endereco {
+    display: flex;
+    gap: 30px;
+    margin: 30px;
+}
+
+.endereco-principal{
+    border-left: 5px solid #0030AD;
+    background: rgba(0, 48, 173, 0.24);
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 0px 0px 10px ;
+}
+
+.endereco-outros {
+    background: #D9D9D9;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 0px 0px 10px ;
+    border-left: 5px solid #AEAEAE;
+}
+
+.enderecos-infos {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.enderecos-infos h2 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 29px;
+    color: #0030AD;
+}
+
+.enderecos-subinfos {
+    margin-top: 10px;
+    margin-left: 10px;
+    color:#686868;
+
+}
+
+.endereco-editar {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px   ;
+}
+
+.endereco-editar a {
+    color: #686868;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.padrao {
+    color: #0030AD;
+    font-style: italic;
+    text-decoration: none;
+}
