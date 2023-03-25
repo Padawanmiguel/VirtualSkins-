@@ -51,29 +51,13 @@
     font-size: 1.2em;
     line-height: 57px;
   }
-  
-  #icon img {
-    margin-top: 12px;
-    font-size: 1.2em;
-    line-height: 57px;
-    width: 25px;
-    height: 25px;
-  }
-  
-  
-  .input-box #icon {
-    position: absolute;
-    right: 8px;
-    font-size: 1.2em;
-    line-height: 57px;
-    cursor: pointer;
-  }
+
   
   .input-box {
     position: relative;
     height: 50px;
     border-bottom: 2px solid var(--cor1);
-    margin: 20px;
+    margin: 25px;
   }
   
   .input-box label {
@@ -120,4 +104,46 @@
 
   .btn-repassword button:hover:active {
     
+  }
+
+  .btn-save button {
+    width: 250px;
+    height: 50px;
+    background: var(--cor1);
+    border: none;
+    margin: 20px;
+    border-radius: 5px;
+    color: #fff ;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .btn-reset button {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border: 3px solid #D2042D;
+    margin: 20px;
+    border-radius: 5px;
+    color: #fff ;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-reset svg{
+    width: 30px ;
+    height: 30px;
+  }
+
+
+
+  .buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }

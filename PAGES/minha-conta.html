@@ -7,7 +7,7 @@
 
     <!-- COMPONENTES -->
     <script src="../COMPONENTES/footer.js" type="text/javascript" defer></script>
-    <script src="../COMPONENTES/navbar.js" type="text/javascript" defer></script>
+    <script src="../COMPONENTES/navbar-2.js" type="text/javascript" defer></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="/CSS/minha-conta.css">
@@ -18,6 +18,7 @@
     <title>Minha conta | VirtualSkins!</title>
 </head>
 <body>
+    <navbar-2></navbar-2>
     <section class="container_index">
         <div class="box-index">
         <main class="minha-conta">
@@ -35,8 +36,8 @@
                         <div class="description-cupom">
                             <h1 class="nome-conta">Cupons de desconto</h1>
                             <div class="input-cupom" >
-                                <input type="text" class="txtBusca" placeholder="Cupom">
-                                <button type="submit" class="imgPesquisa"> <a href=""> RESGATAR CUPOM </a></button>
+                                <input type="text" class="textoBusca" placeholder="Cupom">
+                                <button type="submit" class="imgCupons"> <a href=""> RESGATAR CUPOM </a></button>
                             </div>  
                         </div>
                     </div>
@@ -101,6 +102,7 @@
                                 </div>
                                 <hr>
                                 <div class="flex-endereco">
+                                    <div class="overlay-1"></div>
                                     <div class="endereco-principal">
                                         <div class="enderecos-infos">
                                             <h1>Endereço Principal</h1>
@@ -118,6 +120,7 @@
                                             <a href="">EDITAR</a>
                                         </div>
                                     </div>
+                                    <div class="overlay-2"></div>
                                     <div class="endereco-outros">
                                         <div class="enderecos-infos">
                                             <h1>Endereço Secundário</h1>
@@ -137,6 +140,19 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="btn-repassword">
+                                    <button type="submit">ADICIONAR ENDEREÇO</button>
+                              </div>
+                            </div>
+                            <div class="buttons">
+                                <div class="btn-save">
+                                <button type="submit">SALVAR ALTERAÇÕES</button>
+                                </div>
+                                <div class="btn-reset">
+                                <button type="reset"> 
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M320 146s24.36-12-64-12a160 160 0 10160 160" fill="none" stroke="#D2042D" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"/><path fill="none" stroke="#D2042D" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 58l80 80-80 80"/></svg>
+                                </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -145,5 +161,6 @@
         </main>
         </div>
     </section>
+    <footer-template></footer-template>
 </body>
 </html>

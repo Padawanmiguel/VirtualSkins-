@@ -23,10 +23,6 @@ class Header extends HTMLElement {
       }
       
       header {
-        position: fixed ;
-        top: 0;
-        left: 0;
-        z-index: 2;
         border-radius: 0%
         width: 100vw;
       }
@@ -40,7 +36,6 @@ class Header extends HTMLElement {
         height: 120px;
         border-bottom: 5px solid var(--cor2);
         place-items: center;
-        width: 100vw  ;
       }
       
           /* Sanduiche-menu */
@@ -58,7 +53,7 @@ class Header extends HTMLElement {
         opacity: 0;
       }
       
-      label {
+      .container label {
         cursor: pointer;
         position: relative;
         display: block;
@@ -66,7 +61,7 @@ class Header extends HTMLElement {
         width: 45px;
       }
       
-      label span {
+      .container label span {
         position: absolute;
         display: block;
         height: 5px;
@@ -76,15 +71,15 @@ class Header extends HTMLElement {
         transition: .2s ease-in-out;
       }
       
-      label span:nth-child(1) {
+      .container label span:nth-child(1) {
         top: 0px;
       }
       
-      label span:nth-child(2) {
+      .container label span:nth-child(2) {
         top: 8px;
       }
       
-      label span:nth-child(3) {
+      .container label span:nth-child(3) {
         top: 16px;
       }
       
@@ -193,6 +188,7 @@ class Header extends HTMLElement {
       
       .divConta a {
         text-decoration: none;
+        font-weight: 700;
         color: #000;
         font-size: 15px;
       }      
@@ -285,8 +281,8 @@ class Header extends HTMLElement {
           <div class="divConta">
             <img src="../IMG/person-circle-outline.svg" alt="">
             <span>
-                Olá { USER }<br>
-                <a href="./PAGES/minha-conta.html">MINHA CONTA</a> | <a href="">SAIR</a>
+                Faça <a href="">LOGIN</a><br>
+                ou <a href="">CADASTRE-SE</a>
             </span>
           </div>
           <div class="settings">
@@ -300,4 +296,4 @@ class Header extends HTMLElement {
     }
   }
   
-  customElements.define("navbar-1", Header);
+  customElements.define("navbar-2", Header);

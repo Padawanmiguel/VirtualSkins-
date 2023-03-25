@@ -6,12 +6,6 @@ class Footer extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `    
       <style>
-      * {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, Helvetica, sans-serif;
-  }
-  
   :root {
       --cor1: #0030AD;
       --cor2: #00237A;
@@ -20,6 +14,10 @@ class Footer extends HTMLElement {
       --cor5: #0074E0;
   }
   
+  footer {
+    border-top: 5px solid var(--cor2);
+  }
+
   .news {
       background: var(--cor4);
       padding: 20px;
@@ -48,7 +46,7 @@ class Footer extends HTMLElement {
       text-align: center;
   }
   
-  .input-box{
+  .input-boxes{
       height: 50px;
       background: #fff;
       border: none;
@@ -64,7 +62,7 @@ class Footer extends HTMLElement {
       box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.164);
   }
   
-  .input-box::placeholder {
+  .input-boxes::placeholder {
       font-family: Arial, Helvetica, sans-serif;
       font-weight: 500;
       font-size: 20px;
@@ -104,7 +102,7 @@ class Footer extends HTMLElement {
       color: #fff;
       display: flex;
       justify-content: space-evenly;
-      padding-bottom: 50px;
+      padding: 50px 0;
   }
   
   .bold {
@@ -114,20 +112,20 @@ class Footer extends HTMLElement {
       cursor: default;
   }
   
-  li { 
+  .rodape li { 
       cursor: pointer;
       font-size: 16px;
       margin-top: 8px;
   }
   
-  li a {
+  .rodape li a {
       color: #fff;
       cursor: pointer;
       font-size: 18px;
       text-decoration: none;
   }
   
-  li a:hover {
+  .rodape li a:hover {
       color: #4faaff;
   }
   
@@ -187,8 +185,8 @@ class Footer extends HTMLElement {
               VirtualSkins! NeWs<br>
               <span>Receba novidades e ofertas</span>
               </h1>
-                  <input type="text" placeholder="Qual é o seu nome?" class="input-box">
-                  <input type="email" placeholder="Seu e-mail?"class="input-box">
+                  <input type="text" placeholder="Qual é o seu nome?" class="input-boxes">
+                  <input type="email" placeholder="Seu e-mail?"class="input-boxes">
                   <button type="submit" class="btn">CADASTRAR</button>
           </div>
       </div>
@@ -229,35 +227,35 @@ class Footer extends HTMLElement {
                       <li>
                           <a href="https://www.instagram.com/" class="btn instagram" target="_blank">
                               <div class="icon">
-                                <img src="./IMG/logo-instagram.svg" alt="" class="instas">
+                                <img src="/IMG/logo-instagram.svg" alt="" class="instas">
                               </div>
                           </a>
                       </li>
                       <li>
                           <a href="https://twitter.com/" class="btn twitter" target="_blank">
                               <div class="icon">
-                                <img src="./IMG/logo-twitter.svg" alt="">
+                                <img src="/IMG/logo-twitter.svg" alt="">
                               </div>
                           </a>
                       </li>
                       <li>
                           <a href="https://www.facebook.com/" class="btn facebook" target="_blank">
                               <div class="icon">
-                                <img src="./IMG/logo-facebook.svg" alt="">
+                                <img src="/IMG/logo-facebook.svg" alt="">
                               </div>
                           </a>
                       </li>
                       <li>
                           <a href="https://www.youtube.com/" class="btn youtube" target="_blank">
                               <div class="icon">
-                                <img src="./IMG/logo-youtube.svg" alt="">
+                                <img src="/IMG/logo-youtube.svg" alt="">
                               </div>
                           </a>
                       </li>
                       <li>
                           <a href="https://www.linkedin.com/" class="btn linkedin" target="_blank">
                               <div class="icon">
-                                <img src="./IMG/logo-linkedin.svg" alt="">
+                                <img src="/IMG/logo-linkedin.svg" alt="">
                               </div>
                           </a>
                       </li>
