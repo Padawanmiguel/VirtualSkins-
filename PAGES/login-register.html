@@ -4,15 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <link rel="stylesheet" href="/CSS/login-register.css">
+
+
     <script src="/JS/app.js" type="text/javascript" defer></script>
+    <script src="/JS/mostrar-ocultar-senha.js" type="text/javascript" defer></script>
+
+
     <title>Login & Register | VirtualSkins! </title>
 </head>
 <body>
     <div class="f-container">
         <div class="forms-container">
             <div class="signin-signup">
-                <form action="" class="sign-in-form">
+                <form action="" method="post" class="sign-in-form">
                     <h2 class="title">Login</h2>
                         <div class="lines">
                             <div class="nome-completo">
@@ -27,7 +34,7 @@
                             <div class="nome-completo">
                                 <div class="input-box">
                                     <img src="/IMG/login img/lock-closed.svg" alt="" class="icon">
-                                  <input type="text" required>
+                                  <input type="password" required>
                                   <label>Senha</label>
                                 </div>
                             </div>
@@ -54,7 +61,7 @@
                     </div>
                 </form>
 
-                <form action="" class="sign-up-form">
+                <form action="" method="post" class="sign-up-form">
                     <h2 class="title">Registrar</h2>
                         <div class="lines">
                             <div class="nome-completo">
@@ -77,17 +84,17 @@
                         <div class="lines">
                             <div class="nome-completo">
                                 <div class="input-box">
-                                    <img src="/IMG/login img/eye.svg" alt="" class="icon">
-                                  <input type="text" required>
-                                  <label>Senha</label>
+                                  <img src="/IMG/login img/eye-off.svg" alt="" class="icon" id="eyes" onclick="showHide()">
+                                    <input type="password" required id="password">
+                                    <label>Senha</label>
                                 </div>
-                            </div>
+                              </div>
                         </div>
                         <div class="lines">
                             <div class="nome-completo">
                                 <div class="input-box">
                                     <img src="/IMG/login img/lock-closed.svg" alt="" class="icon">
-                                  <input type="text" required>
+                                  <input type="password" required>
                                   <label>Confirmar Senha</label>
                                 </div>
                             </div>
@@ -121,10 +128,10 @@
                     <h3>
                         Novo por aqui ?
                     </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione suscipit, quas explicabo fuga odit distinctio. Labore, iste nisi totam minus doloribus sint, accusamus aut veniam facere reprehenderit officia esse sed.</p>
-                    <button class="buttn transparent" id="sign-up-btn">Login</button>
+                    <p>A VirtualSkins é uma e-commerce especializada em vendas de Óculos Virtuais onde o cliente pode personalizar o seu VR da forma de desejar. Esta é uma empresa onde você consegue expressar sua criatividade com as skins dos seus VRs e mostrar para seus amigos o seu lindo óculos. </p>
+                    <button class="buttn transparent" id="sign-up-btn">Registre-se</button>
                 </div>
-                <img src="/IMG/programming.svg" class="image" alt="">
+                <img src="/IMG/lost-online.svg" class="image" alt="">
             </div>
 
             <div class="panel right-panel">
@@ -132,10 +139,10 @@
                     <h3>
                         Já tem conta conosco ?
                     </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione suscipit, quas explicabo fuga odit distinctio. Labore, iste nisi totam minus doloribus sint, accusamus aut veniam facere reprehenderit officia esse sed.</p>
-                    <button class="buttn transparent" id="sign-in-btn">Registre-se</button>
+                    <p>É muito bom te ver aqui de novo, faça seu login e veja as novidades que estão te esperando, corre antes que acabem as promoções.</p>
+                    <button class="buttn transparent" id="sign-in-btn">Login</button>
                 </div>
-                <img src="/IMG/lost-online.svg" class="image" alt="">
+                <img src="/IMG/programming.svg" class="image less-height" alt="">
             </div>
         </div>
     </div>

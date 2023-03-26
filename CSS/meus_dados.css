@@ -147,11 +147,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 2px solid #44020f;
+    box-shadow: 2px 2px 1px  #D2042D;
+    transition: all .2s ease;
   }
 
-  .btn-reset svg{
+  .btn-reset button:hover {
+    background: #D2042D;
+    transform: translate(-2px, -1px);
+    box-shadow: 5px 5px 1px  #44020f;
+    transition: all .2s ease-in;
+  }
+
+  .refresh-button{
     width: 30px ;
     height: 30px;
+  }
+
+  .btn-reset button:hover .refresh-button path {
+    stroke: #fff;
   }
 
 

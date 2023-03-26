@@ -51,13 +51,18 @@
     margin-right: 10px;
     display: flex;
     justify-content: flex-end;
-    gap: 10px   ;
+    gap: 20px   ;
 }
 
 .endereco-editar a {
     color: #686868;
     font-style: italic;
     text-decoration: none;
+    transition: .7s ease;
+}
+
+.endereco-editar a:hover {
+    transform: scale(1.1);
 }
 
 .endereco-editar .padrao {

@@ -23,12 +23,7 @@ class Header extends HTMLElement {
       }
       
       header {
-        position: fixed ;
-        top: 0;
-        left: 0;
-        z-index: 2;
-        border-radius: 0%
-        width: 100vw;
+        overflow: hidden;
       }
 
       nav {
