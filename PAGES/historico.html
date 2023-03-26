@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- JS -->
+        <script src="/JS/mais-detalhes.js" type="text/javascript" defer></script>
+
+        <!-- COMPONENTES -->
+        <script src="../COMPONENTES/footer.js" type="text/javascript" defer></script>
+        <script src="../COMPONENTES/navbar-2.js" type="text/javascript" defer></script>
+    
+        <!-- CSS -->
+        <link rel="stylesheet" href="/CSS/historico.css">
+        <link rel="stylesheet" href="../style.css">
+
+    <title>Histórico | VirtualSkins!</title>
+</head>
+<body>
+    <navbar-2></navbar-2>
+    <section class="container_index">
+        <div class="box-index">
+            <main class="historico">
+                <div class="historico-wrapper">
+                    <div class="historico-content">
+                        <div class="titulo-historico">
+                            <img src="/IMG/bag-check.svg">
+                            <h1>Meu histórico</h1>
+                        </div> 
+                        <hr>
+                        <div class="status-pedidos">
+                            <div class="flex-pedidos">
+                                <p>Pedidos</p>
+                                <p>Ainda não entregue</p>
+                                <p>Pendente</p>
+                            </div>
+                            <div class="status">
+                                <div class="azul"></div>
+                                <div class="cinza"></div>
+                            </div>
+                        </div>
+                        <div class="produtos-historico">
+
+                        </div>
+                        <div class="detalhes-produtos">
+                                <p class="bold">Número do pedido</p>
+                                <p class="bold">Data</p>
+                                <p class="bold">Status</p>
+                                <p class="bold">Pagamento</p>
+                                <p class="bold blue">Mais detalhes
+                                    <input type="checkbox" name="" id="checkbox" onclick="clickInfo()"> 
+                                    <label for="checkbox" class="checkbox-abrir">
+                                        <img src="/IMG/caret-down.svg" alt="" id="flecha">
+                                    </label>
+                                </p>
+                                <p>#12345678</p>
+                                <p>12/12/12</p>
+                                <p class="bold green">Concluído</p>
+                                <p>Cartão de crédito</p>
+                        </div>
+                        <div id="detalhes">
+                            <hr>
+                            <div class="status-content">
+                                <div class="status-titulo">
+                                    <h1>Status do pedido: <span>Vendido e entregue por VirtualSkins!</span></h1>
+                                </div>
+                                <div class="grid-pedidos">
+                                    <div class="pedidos p1">
+                                        <img src="" alt="">
+                                        <div class="text-pedidos">
+                                            <img src="" alt="">
+                                            <img src="" alt="">
+                                            <img src="" alt="">
+                                            <img src="" alt="">
+                                            <p>Pedido recebido</p>
+                                            <p>Pedido em separação</p>
+                                            <p>Nota fiscal emitida</p>
+                                            <p>Produto expedido</p>
+                                        </div>
+                                    </div>
+                                    <div class="pedidos p2">
+                                        <img src="" alt="">
+                                        <p>Enviado para a transportadora</p>
+                                    </div>
+                                    <div class="pedidos p3">
+                                        <img src="" alt="">
+                                        <p>Recebido pela transportadora</p>
+                                    </div>
+                                    <div class="pedidos p4">
+                                        <img src="" alt="">
+                                        <p>Mercadoria em trânsito</p>
+                                    </div>
+                                    <div class="pedidos p5">
+                                        <img src="" alt="">
+                                        <p>Mercadoria em rota de entrega</p>
+                                    </div>
+                                    <div class="pedidos p6">
+                                        <img src="" alt="">
+                                        <p>Pedido entregue</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btns">
+                            <button class="bt Rastreio">
+                                Rastreio
+                            </button>
+                            <button class="bt Notafiscal">
+                                Nota fiscal
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </main>
+        </div>
+    </section>
+    <footer-template></footer-template>
+
+</body>
+</html>
