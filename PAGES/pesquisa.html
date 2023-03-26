@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <!-- JS -->
+            <script src="/JS/mais-detalhes.js" type="text/javascript" defer></script>
+
+            <!-- COMPONENTES -->
+            <script src="../COMPONENTES/footer.js" type="text/javascript" defer></script>
+            <script src="../COMPONENTES/navbar-2.js" type="text/javascript" defer></script>
+            <script src="../COMPONENTES/produto1/produto-1.js" type="text/javascript" defer></script>
+
+        
+            <!-- CSS -->
+            <link rel="stylesheet" href="/CSS/pesquisa.css">
+            <link rel="stylesheet" href="/CSS/range.css">
+            <link rel="stylesheet" href="../style.css">
+
+
+    <title>Pesquisa para {.produto-pesquisado} | VirtualSkins!</title>
+</head>
+<body>
+    <navbar-2></navbar-2>
+    <section class="container_index">
+        <div class="box-index">
+            <main class="pesquisa">
+                <div class="pesquisa-wrapper">
+                    <div class="pesquisa-content">
+                        <div class="titulo-do-filtro">
+                            <h1 class="filtro-nome"> Categorias relacionados</h1>
+                            <p>{Produto}</p>
+                        </div>
+                        <div class="filtros">
+                            <div class="filtro-box">
+                                <div class="titulo-filtro">
+                                    <img src="/IMG/Timeline.svg" alt="">
+                                    <h1>Filtrar por:</h1>
+                                </div>
+                                <div class="price-extension">
+                                    <h1 class="price-titulo"></h1>
+                                    <input type="range" class="bar">
+                                    <div class="zero-max">
+                                        <p>R$0,00</p>
+                                        <p>R$2.000,00</p>
+                                    </div>
+                                </div>
+                                <div class="tipo-de-produto">
+                                    <h1>PROMOÇÕES</h1>
+                                    <label class="p-container"> 
+                                        <input checked="checked" type="checkbox">
+                                        <div class="checkmark"></div>
+                                        <p>Oferta</p>
+                                    </label>
+                                    <label class="p-container"> 
+                                        <input checked="checked" type="checkbox">
+                                        <div class="checkmark"></div>
+                                        <p>Oferta</p>
+                                    </label>
+                                    <label class="p-container"> 
+                                        <input checked="checked" type="checkbox">
+                                        <div class="checkmark"></div>
+                                        <p>Oferta</p>
+                                    </label>
+                                    <a href="">VER MAIS</a>
+                                </div>
+                                <div class="marcas">
+                                    <h1>MARCAS</h1>
+                                    <label class="p-container"> 
+                                        <input checked="checked" type="checkbox">
+                                        <div class="checkmark"></div>
+                                        <p>Oferta</p>
+                                    </label>
+                                    <label class="p-container"> 
+                                        <input checked="checked" type="checkbox">
+                                        <div class="checkmark"></div>
+                                        <p>Oferta</p>
+                                    </label>
+                                    <label class="p-container"> 
+                                        <input checked="checked" type="checkbox">
+                                        <div class="checkmark"></div>
+                                        <p>Oferta</p>
+                                    </label>
+                                    <a href="">VER MAIS</a>
+                                </div>
+                                <div class="categorias">
+                                    <h1>CATEGORIAS</h1>
+                                    <label class="p-container"> 
+                                        <input checked="checked" type="checkbox">
+                                        <div class="checkmark"></div>
+                                        <p>Oferta</p>
+                                    </label>
+                                    <label class="p-container"> 
+                                        <input checked="checked" type="checkbox">
+                                        <div class="checkmark"></div>
+                                        <p>Oferta</p>
+                                    </label>
+                                    <label class="p-container"> 
+                                        <input checked="checked" type="checkbox">
+                                        <div class="checkmark"></div>
+                                        <p>Oferta</p>
+                                    </label>
+                                    <a href="">VER MAIS</a>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="titulo-pesquisa">
+                                <h1>Pesquisa relacionada a: {produto}</h1>
+                                <div class="ordenar-por">
+                                    <img src="/IMG/ordenar.svg" alt="">
+                                    <p>Ordenar por: <img src="" alt=""> </p>
+                                    <button class="order-for">
+                                        Mais recente
+                                        <input type="checkbox" name="" id="checkbox" onclick="clickInfo2()"> 
+                                    <label for="checkbox" class="checkbox-abrir">
+                                        <img src="/IMG/caret-down.svg" alt="" id="flecha2">
+                                    </label>
+                                    </button>
+                                    <div id="optOrderFor">
+                                        <div class="opts">
+                                            <p>Relevância</p>
+                                            <p>Mais vendidos</p>
+                                            <p>Descontos</p>
+                                            <p>Maior preço</p>
+                                            <p>Menos preço</p>
+                                            <p>De A a Z</p>
+                                            <p>De Z a A</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="produtos-pesquisa">
+                                <produto-1></produto-1>
+                                <produto-1></produto-1>
+                                <produto-1></produto-1>
+                                <produto-1></produto-1>
+                                <produto-1></produto-1>
+                                <produto-1></produto-1>
+                                <produto-1></produto-1>
+                                <produto-1></produto-1>
+                                <produto-1></produto-1>
+                                <produto-1></produto-1>
+                                <produto-1></produto-1>
+                                <produto-1></produto-1>
+                            </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </section>
+    <footer-template></footer-template>
+</body>
+</html>

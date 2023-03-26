@@ -129,7 +129,7 @@ hr {
     background-color: transparent;
     cursor: pointer;
     margin: 10px;
-    width: 200px;
+    width: 230px;
     height: 50px;
     text-transform: uppercase;
     border: 2px solid var(--cor4);
@@ -148,7 +148,6 @@ hr {
     text-align: center;
     cursor: pointer;
     margin-bottom: 40px;
-
 }
 
 .btns .bt:hover {
@@ -157,6 +156,16 @@ hr {
     transform: translate(-2px, -1px);
     box-shadow: 5px 5px 1px  var(--cor4);
     transition: all .2s ease-in;
+  }
+
+  .btns .bt:hover .bt2 path {
+    fill: #fff;
+  }
+
+  .bt svg {
+    width: 35px ;
+    height: 35px;
+    margin: 10px;
   }
 
   #detalhes {
@@ -183,3 +192,67 @@ hr {
     font-size: 1rem;
 }
 
+
+.grid-pedidos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: start;
+}
+
+.pedidos {
+    margin: 0 0 0 30px;
+    grid-row: 2;
+}
+
+.pedidos-img {
+    display: flex;
+    grid-row: 1;
+    margin: 30px;
+    align-items: center; 
+}
+
+.text-pedidos img {
+    width: 30px;
+    height: 30px;
+}
+
+.flex-text-pedidos {
+    display: flex;
+    gap: 10px;
+}
+
+.linha-azul {
+    background: var(--cor1);
+    height: 5px;
+    width: 120px;
+    margin-left: 10px;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.img-info {
+display: grid;
+    grid-template-columns: .25fr 1fr;
+    margin: 30px;
+    align-items: center;
+}
+
+.img img{
+    width: 200px;
+    height: 200px;
+}
+
+.produto-preco {
+    margin: 5px 0 5px 0;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: var(--cor1);
+}
+
+.produto-nome ,.qtd-produto {
+    margin: 5px 0 5px 0;
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 20px;
+}

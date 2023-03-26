@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --cor1: #0030AD;
+    --cor2: #00237A;
+    --cor3: #0048FF;
+    --cor4: #00113B;
+    --cor5: #0074E0;
+}
+
+.pesquisa {
+    width: 1850px;
+    height: 100%;
+}
+
+.pesquisa-wrapper {
+    margin: 30px ;
+}
+
+.pesquisa-content {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: .1fr 1fr;
+    grid-template-rows: .1fr 1fr;;
+}
+
+.produtos-pesquisa {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+
+
+
+/* CHECKMARK TIPO DE PRODUTO / MARCA /CATEGORIA */
+
+
+.p-container {
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    top: 30px;
+    align-items: center;
+    gap: 20px;
+    margin: 10px;
+  }
+  
+  .p-container input {
+    position: absolute;
+    transform: scale(0);
+  }
+  
+  .p-container input:checked ~ .checkmark {
+    transform: rotate(45deg);
+    height: 2em;
+    width: .7em;
+    border-color: var(--cor1);
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-radius: 0;
+  }
+  
+  .p-container .checkmark {
+    display: block;
+    width: inherit;
+    height: inherit;
+    border: 2px solid var(--cor1);
+    border-radius: 4px;
+    transition: all .3s;
+    width: 25px;
+    height: 25px;
+  }
+
+/* FILTROS */
+
+.filtros {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+  .filtro-box {
+    margin: 10px;
+    width: 315px;
+    height: 99%;
+    border-radius: 10px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 0px 10px 10px rgb(0 0 0 / 10%);
+  }
+
+
+  .price-extension input {
+    width: 280px;
+  }
+  .zero-max {
+    display: flex;
+    justify-content: space-between  ;
+  }
+
+  .tipo-de-produto {
+    height: 230px;
+  }
+
+  .marcas {
+    height: 230px;
+  }
+
+  .categorias {
+    height: 230px;
+  }
+
+  .tipo-de-produto  h1 {
+    position: relative;
+    top: 30px;
+    font-size: 1rem;
+  }
+
+  .marcas  h1 {
+    position: relative;
+    top: 30px;
+    font-size: 1rem;
+  }
+
+  .categorias h1 {
+    position: relative;
+    top: 30px;
+    font-size: 1rem;
+  }
+
+  .tipo-de-produto a {
+    position: relative;
+    top: 30px;
+    color: var(--cor1);
+    text-decoration: underline;
+    font-size: .7rem;
+  }
+
+  .marcas a {
+    position: relative;
+    top: 30px;
+    color: var(--cor1);
+    text-decoration: underline;
+    font-size: .7rem;
+  }
+
+  .categorias a {
+    position: relative;
+    top: 30px;
+    color: var(--cor1);
+    text-decoration: underline;
+    font-size: .7rem;
+  }
+
+
+
+
+  /* PESUISA */
+
+  .titulo-pesquisa {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+  }
+
+  .titulo-do-filtro {
+    margin: 20px;
+  }
+
+  .titulo-do-filtro h1 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .titulo-pesquisa {
+    margin: 20px;
+  }
+
+  .titulo-filtro {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .ordenar-por {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .ordenar-por p {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+  }
+  
+
+  .order-for {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid var(--cor1);
+    outline: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    font-weight: 500;
+    line-height: 130%;
+    color: #000000;
+  }
+
+  #flecha2 {
+    width: 30px;
+    height: 30px;
+  }
+
+  #checkbox {
+    opacity: 0;
+  }
+
+  #optOrderFor {
+    display: none;
+  }
+
+  .opts {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #fff;
+    position: absolute;
+    right: 51px;
+    width: 236px;
+    top: 213px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.24);
+    border-radius: 8px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    height: 250px;
+  }
+
+  .opts p {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 130%;
+    color: #000000;
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+    width: 248px;
+    height: 44px;
+    padding: 10px;
+  }
+
+  .opts p:hover {
+    background-color: #ddd;
+    width: 248px;
+    height: 44px;
+  }
+
+   /* personalizar a barra em geral, aqui estou definindo 10px de largura para a barra vertical
+e 10px de altura para a barra horizontal */
+.opts::-webkit-scrollbar {
+    width:10px;
+    height: 5px;
+
+  }
+   
+  /* aqui é para personalizar o fundo da barra, neste caso estou colocando um fundo cinza escuro*/
+  .opts::-webkit-scrollbar-track {
+    background:#ddd;
+  }
+   
+  /* aqui é a alça da barra, que demonstra a altura que você está na página
+  estou colocando uma cor azul clara nela*/
+  .opts::-webkit-scrollbar-thumb {
+    background: var(--cor1);
+    border-radius: 5px;
+  }
+

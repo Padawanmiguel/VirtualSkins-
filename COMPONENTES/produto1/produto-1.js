@@ -171,7 +171,7 @@ class Main extends HTMLElement {
     <div class="primeiro-produto">
     <div class="promos">
         <div class="stars">
-            <img src="./IMG/img-produtos/Stars.svg" alt="">
+            <img src="/IMG/img-produtos/Stars.svg" alt="">
         </div>
         <div class="produtos-restantes">
             <p> Restam <br>
@@ -185,7 +185,7 @@ class Main extends HTMLElement {
     </div>
     <div class="img">
         <div class="produto-imagem">
-            <img src="./IMG/img-produtos/produto1.svg" alt="">
+            <img src="/IMG/img-produtos/produto1.svg" alt="">
         </div>
     </div>
     <div class="infos">
@@ -199,7 +199,7 @@ class Main extends HTMLElement {
     <div class="comprar">
         <div class="btnComprar">
             <button type="submit">
-                 <a href="#"> <img src="./IMG/img-produtos/Carrinho.svg" alt=""> </a>
+                 <a href="#"> <img src="/IMG/img-produtos/Carrinho.svg" alt=""> </a>
             </button>
         </div>
     </div>
