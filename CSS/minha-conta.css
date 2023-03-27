@@ -52,7 +52,6 @@
 
 .description-conta h1{
   color: #fff;
-  text-shadow: 2px 2px 0px var(--cor5);
 }
 
 .description-conta .email-conta {
@@ -101,7 +100,6 @@
 
 .description-cupom h1{
   color: #fff;
-  text-shadow: 2px 2px 0px var(--cor5);
 }
 
 .input-cupom {
