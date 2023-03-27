@@ -272,9 +272,13 @@ class Header extends HTMLElement {
               <span></span>
               </label> 
           </div>
+<<<<<<< HEAD
           <div class="logo"> 
           <a href="/index.html"><img src="https://cdn.dribbble.com/users/230290/screenshots/13959203/virtual_reality_logo_4x.jpg" alt=""></a>
           </div>
+=======
+          <div class="logo"> <a href="/index.html"> <img src="https://cdn.dribbble.com/users/230290/screenshots/13959203/virtual_reality_logo_4x.jpg" alt=""> </a> </div>
+>>>>>>> f12dbf82e1f8efa7e91ba6eaba75a0a8369f0046
           <div id="divBusca" >
               <input type="text" class="txtBusca" placeholder="Pesquisar...">
               <button type="submit" class="imgPesquisa"> <a href=""> <img src="../IMG/search.svg" alt=""> </a></button>

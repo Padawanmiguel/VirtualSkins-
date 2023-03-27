@@ -271,9 +271,13 @@ class Header extends HTMLElement {
               <span></span>
               </label> 
           </div>
+<<<<<<< HEAD
           <div class="logo"> 
             <a href="/index.html"><img src="https://cdn.dribbble.com/users/230290/screenshots/13959203/virtual_reality_logo_4x.jpg" alt=""></a>
           </div>
+=======
+          <div class="logo"> <a href="/index.html" <img src="https://cdn.dribbble.com/users/230290/screenshots/13959203/virtual_reality_logo_4x.jpg" alt=""></a></div>
+>>>>>>> f12dbf82e1f8efa7e91ba6eaba75a0a8369f0046
           <div id="divBusca" >
               <input type="text" class="txtBusca" placeholder="Pesquisar...">
               <button type="submit" class="imgPesquisa"> <a href=""> <img src="../IMG/search.svg" alt=""> </a></button>
@@ -283,12 +287,20 @@ class Header extends HTMLElement {
             <img src="../IMG/person-circle-outline.svg" alt="">
             <span>
                 Olá { USER }<br>
+<<<<<<< HEAD
                 <a href="/PAGES/minha-conta.html">MINHA CONTA</a> | <a href="/PAGES/login-register.html">SAIR</a>
+=======
+                <a href="./PAGES/minha-conta.html">MINHA CONTA</a> | <a href="/PAGES/login-register.html">SAIR</a>
+>>>>>>> f12dbf82e1f8efa7e91ba6eaba75a0a8369f0046
             </span>
           </div>
           <div class="settings">
             <button class="imgCentral"> <a href="#"> <img src="../IMG/headset.svg" alt=""> </a> </button>
+<<<<<<< HEAD
             <button class="imgFavoritos"> <a href="/PAGES/lista-de-desejos.html"> <img src="../IMG/heart.svg" alt=""> </a></button>
+=======
+            <button class="imgFavoritos"> <a href="/PAGES/lista-de-desejos.html"> <img src="../IMG/heart.svg" alt=""></a></button>
+>>>>>>> f12dbf82e1f8efa7e91ba6eaba75a0a8369f0046
             <button class="imgCarrinho"> <a href="#"> <img src="../IMG/shopping-cart.svg" alt=""> </a> </button>
           </div>
         </nav>
