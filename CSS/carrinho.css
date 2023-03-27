@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --cor1: #0030AD;
+    --cor2: #00237A;
+    --cor3: #0048FF;
+    --cor4: #00113B;
+    --cor5: #0074E0;
+}
+
+.carrinho {
+    width: 1400px;
+    height: 100%;
+}
+
+.carrinho-wrapper {
+    margin: 30px ;
+}
+
+.carrinho-content {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+
+.titulo-carrinho {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 10px;
+    height: 46px;
+}
+
+.titulo-carrinho h1 {
+    margin: 10px;
+    font-size: 1.3rem;
+}
+
+.titulo-carrinho img {
+    width: 40px;
+    height: 40px;
+}
+
+hr {
+    display: block;
+    margin: 0 auto;
+    width: 97%;
+}
+
+.img-info {
+    display: grid;
+        grid-template-columns: .25fr 1fr;
+        margin: 30px;
+        align-items: center;
+    }
+    
+    .img img{
+        width: 200px;
+        height: 200px;
+    }
+    
+    .produto-preco {
+        margin: 5px 0 5px 0;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        color: var(--cor1);
+    }
+    
+    .produto-nome ,.qtd-produto {
+        margin: 5px 0 5px 0;
+        font-size: 20px;
+        font-weight: 500;
+        color: #333;
+        margin-bottom: 20px;
+    }
+    
+    .carrinho-grid {
+        display: grid;
+        grid-template-columns: 1fr .5fr;
+    }
